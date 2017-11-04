@@ -6,7 +6,7 @@ def find_portname_RPi():
     found = -1
     for i in range(20):
         portname = '/dev/ttyACM%i' % i
-        if os.path.exists:
+        if os.path.exists(portname):
             found = 1
             break
 
