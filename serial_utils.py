@@ -292,7 +292,7 @@ class serial_test(object):
         num_empty = 0
 
         while i < 100:
-            new_data = self.read_all(ser)
+            new_data = self.read_all()
             data += new_data
             time.sleep(0.2)
             i += 1
