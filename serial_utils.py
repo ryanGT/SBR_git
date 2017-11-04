@@ -236,7 +236,9 @@ class serial_test(object):
         self.ser = serial.Serial(self.portname, \
                                  self.baudrate, \
                                  timeout=self.timeout)
+        self._set_in_waiting_func()
 
+        
     def close(self):
         self.ser.close()
 
